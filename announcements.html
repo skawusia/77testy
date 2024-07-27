@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogłoszenia</title>
+    <style>
+        body {
+            font-family: 'Nunito', monospace;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('test1.png');
+            background-size: cover;
+            background-position: center top;
+            height: 200px;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .announcement {
+            background-color: #fff;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .announcement1 {
+            border-left: 4px solid #4CAF50;
+        }
+        .announcement2 {
+            border-left: 4px solid #FF0000;
+        }
+        .announcement h2 {
+            margin-top: 0;
+        }
+        .content {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Ogłoszenia</h1>
+    </header>
+    <main>
+        <div class="announcement announcement1">
+            <h2>Rekrutacja </h2>
+            <div class="content">
+                <p>REKRUTACJA ON!</p>
+
+<p>Jesteś zainteresowany pracą jako funkcjonariusz służb publicznych? Masz zajawkę na to i nie boisz się ryzyka?
+    Rekrutacja do Los Santos Police Department została otwarta!</p>
+<p>W związku z powyższym, wszyscy zainteresowani dołączeniem do naszej jednostki muszą się zgłosić bezpośrednio do rekruterów na komendzie ( wystarczy zadzwonić w dzwonek)</p>
+
+                <p>Lista rekruterów: </p>
+
+<p>[201] Ivan Prusznikow</p>
+<p>[226] David Barrio </p>
+<p>[300] Alfonso Amarena</p>
+<p>[320] Alexander Smith</p>
+<p>[333] William Rosse</p>
+<p>[326] Jamal Williams</p>
+<p>[327] Cody Evans</p>
+<p>[344] Jerry Williams</p>
+<p>[401] Jacob Sauvage</p>
+<p>[427] Caesar Martini</p>
+<p>[430] Omar Zidan</p>
+<p>[449] Antonio Ferri</p>
+<p>[469] William Smith</p>
+<p>[500] Victor Moralez</p>
+<p>[501] Jerry Bowman</p>
+<p>[502] Andrew Lee</p>
+
+<p>Rekrutacja polega na dwóch etapach:</p>
+<p>I etap - rozmowa kwalifikacyjna w biurze. Osoba, która pozytywnie przejdzie rozmowę przechodzi do etapu II. Osoba, której się nie uda zostaje tymczasowo zablokowana ( 2 tygodnie)</p>
+<p>II etap - indywidualna akademia, która odbędzie się wraz z doświadczonymi FTO. Akademia indywidualna składa się max z 5 rekrutów. Każdy rekrut dostanie materiały szkoleniowe, z których musi się przygotować. Każda osoba która nie przygotuje się zostanie wydalona z akademii indywidualnej.</p>
+
+<p> High Command</p>
+            </div>
+        </div>
+        <div class="announcement announcement2">
+            <h2>Ogłoszenie takie o</h2>
+            <div class="content">
+                <p>Szefowa to jednak top szefowa xdx</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.announcement').forEach(announcement => {
+            announcement.addEventListener('click', () => {
+                const content = announcement.querySelector('.content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
