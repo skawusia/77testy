@@ -1,0 +1,203 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #3A3F5C;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #444;
+      padding: 20px;
+      width: 220px; /* Szerokość paska bocznego */
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -200px; /* Początkowo ukryty poza ekranem */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      transition: left 0.3s; /* Animacja wysuwania i chowania */
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 20px; /* Dopasowanie do szerokości przycisku menu */
+      padding: 20px;
+      max-width: 1200px;
+      transition: margin-left 0.3s; /* Animacja dla przesuwającej się zawartości */
+    }
+
+    .officers {
+      background-color: #B6B8BF;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .officers h2 {
+      display: inline-block;
+      color: #333333;
+      font-size: 24px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .logo {
+      float: right;
+      width: 40px; /* Zmniejszone rozmiar logo */
+      height: auto;
+      margin-left: 10px;
+      margin-top: 5px; /* Dostosowane marginesy */
+      border-radius: 100%;
+}
+
+.logo1 {
+      float: right;
+      width: 40px; /* Zmniejszone rozmiar logo */
+      height: auto;
+      margin-left: 10px;
+      margin-top: 5px; /* Dostosowane marginesy */
+      border-radius: 20%;
+    }
+
+    .officers ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+   .officers li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #6fa8dc, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers li2 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #ffe599, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers li3 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #00FFFF, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers li4 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #CC0000, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers li5 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #807f7f, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+      
+      .officers li6 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #6aa84f, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+.officers li7 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, #663300, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers img {
+      width: 100px;
+      height: 100px;
+      border-radius: 30%;
+      margin-right: 20px;
+      border: 2px solid #444;
+    }
+
+    .officers div {
+      flex-grow: 1;
+    }
+
+    .officers h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333333;
+    }
+
+    .officers h4 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #666666;
+    }
+
+    .officers h5 {
+      margin: 5px 0;
+      font-size: 13px;
+      color: #666666;
+    }
+
+    .officers p {
+      margin: 25px 0;
+      font-size: 20px;
+      color: #333333;
+    }
+
+    .officers p1 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #333333;
+    }
+
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      z-index: 1000;
+    }

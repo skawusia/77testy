@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LSPD - Serwer 77RP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #3A3F5C;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .officers {
+      background-color: #B6B8BF;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .officers h2 {
+      display: inline-block;
+      color: #333333;
+      font-size: 24px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .logo {
+      float: right;
+      width: 40px; /* Zmniejszone rozmiar logo */
+      height: auto;
+      margin-left: 10px;
+      margin-top: 5px; /* Dostosowane marginesy */
+      border-radius: 100%;
+    }
+
+    .officers ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .officers li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to left, blue, white);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .officers img {
+      width: 100px;
+      height: 100px;
+      border-radius: 30%;
+      margin-right: 20px;
+      border: 2px solid #444;
+    }
+
+    .officers div {
+      flex-grow: 1;
+    }
+
+    .officers h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333333;
+    }
+
+    .officers h4 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #666666;
+    }
+
+    .officers p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #B6B8BF;
+    }
+    
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-image: url('test1.png');
+      background-size: cover;
+      background-position: center top;
+      height: 200px;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      padding: 1rem;
+    }
+
+    .sidebar {
+      display: none;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      overflow-y: auto;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .officers {
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    .officer-summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .officer-summary img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .officer-details {
+      display: none;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      max-height: 0;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .officer-summary.expanded .officer-details {
+      display: block;
+      max-height: 500px; /* Adjust as necessary */
+    }
+  </style>
+</head>
+<body>
+  <section class="officers">
+    <h2>Funkcjonariusze</h2>
+    <img src="logo.png" alt="Logo" class="logo"> <!-- Logo -->
+    <p>Oto lista funkcjonariuszy LSPD na serwerze 77RP:</p>
+    <ul>
+      <li class="officer-summary" onclick="toggleDetails(this)">
+          <img src="brak zdjecia.png" alt="Mark Malboro">
+          <div>
+            <h3>Mark Malboro</h3>
+            <h4>Pozycja: Dyrektor BUREAU</h4>
+          </div>
+          <div class="officer-details">
+            <p>Numer odznaki: 770</p>
+          </div>
+        </li>
+      <li>
+        <img src="emily.png" alt="DANE IC">
+        <div>
+          <h3>DANE IC</h3>
+          <h4>Pozycja: Dyrektor BUREAU</h4>
+          <p>Numer odznaki: </p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Lola Badclick">
+        <div>
+          <h3>Lola Badclick</h3>
+          <h4>Pozycja: Chief Of Police</h4>
+          <p>Numer odznaki: 101</p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Raul Danzano">
+        <div>
+          <h3>Raul Danzano</h3>
+          <h4>Pozycja: Assistant Chief Of Police</h4>
+          <p>Numer odznaki: 102</p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Mason Murphy">
+        <div>
+          <h3>Mason Murphy</h3>
+          <h4>Pozycja: Deputy Chief Of Police</h4>
+          <p>Numer odznaki: 103</p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Youccambe Sauvage">
+        <div>
+          <h3>Youccambe Sauvage</h3>
+          <h4>Pozycja: Deputy Chief Of Police</h4>
+          <p>Numer odznaki: 104</p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Christopher Burns">
+        <div>
+          <h3>Christopher Burns</h3>
+          <h4>Pozycja: Kapitan</h4>
+          <p>Numer odznaki: 105</p>
+        </div>
+      </li>
+      <li>
+        <img src="michael.png" alt="Michael Brown">
+        <div>
+          <h3>Michael Brown</h3>
+          <h4>Pozycja: Kapitan</h4>
+          <p>Numer odznaki: 34567</p>
+        </div>
+      </li>
+      <!-- Można dodać więcej funkcjonariuszy -->
+    </ul>
+     <script>
+    function toggleDetails(element) {
+      element.classList.toggle('expanded');
+    }
+
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      if (sidebar.style.display === "block") {
+        sidebar.style.display = "none";
+      } else {
+        sidebar.style.display = "block";
+      }
+    }
+
+    document.querySelectorAll('.officer-summary').forEach(officer => {
+      officer.addEventListener('click', () => {
+        const details = officer.querySelector('.officer-details');
+        if (details) {
+          details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+      });
+    });
+  </script>
+  </section>
+</body>
+</html>

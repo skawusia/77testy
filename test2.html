@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogłoszenia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #282c34;
+            color: #abb2bf;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #61dafb;
+            color: #282c34;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .announcement {
+            background-color: #20232a;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;    
+        }
+        .announcement:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+        .announcement1 {
+            border-left: 4px solid #61dafb;
+        }
+        .announcement2 {
+            border-left: 4px solid #e06c75;
+        }
+        .announcement h2 {
+            margin-top: 0;
+            color: #61dafb;
+        }
+        .content {
+            display: none;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: darkgray;
+            text-align: center;
+            color: white;
+            padding: 4px 0;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Ogłoszenia</h1>
+    </header>
+    <main>
+        <div class="announcement announcement1">
+            <h2>Rekrutacja</h2>
+            <div class="content">
+                <p>REKRUTACJA ON!</p>
+                <p>Jesteś zainteresowany pracą jako funkcjonariusz służb publicznych? Masz zajawkę na to i nie boisz się ryzyka? Rekrutacja do Los Santos Police Department została otwarta!</p>
+                <p>W związku z powyższym, wszyscy zainteresowani dołączeniem do naszej jednostki muszą się zgłosić bezpośrednio do rekruterów na komendzie ( wystarczy zadzwonić w dzwonek)</p>
+                <p>Lista rekruterów:</p>
+                <ul>
+                    <li>[201] Ivan Prusznikow</li>
+                    <li>[226] David Barrio</li>
+                    <li>[300] Alfonso Amarena</li>
+                    <li>[320] Alexander Smith</li>
+                    <li>[333] William Rosse</li>
+                    <li>[326] Jamal Williams</li>
+                    <li>[327] Cody Evans</li>
+                    <li>[344] Jerry Williams</li>
+                    <li>[401] Jacob Sauvage</li>
+                    <li>[427] Caesar Martini</li>
+                    <li>[430] Omar Zidan</li>
+                    <li>[449] Antonio Ferri</li>
+                    <li>[469] William Smith</li>
+                    <li>[500] Victor Moralez</li>
+                    <li>[501] Jerry Bowman</li>
+                    <li>[502] Andrew Lee</li>
+                </ul>
+                <p>Rekrutacja polega na dwóch etapach:</p>
+                <p>I etap - rozmowa kwalifikacyjna w biurze. Osoba, która pozytywnie przejdzie rozmowę przechodzi do etapu II. Osoba, której się nie uda zostaje tymczasowo zablokowana (2 tygodnie)</p>
+                <p>II etap - indywidualna akademia, która odbędzie się wraz z doświadczonymi FTO. Akademia indywidualna składa się max z 5 rekrutów. Każdy rekrut dostanie materiały szkoleniowe, z których musi się przygotować. Każda osoba która nie przygotuje się zostanie wydalona z akademii indywidualnej.</p>
+                <p>High Command</p>
+            </div>
+        </div>
+        <div class="announcement announcement2">
+            <h2>Ogłoszenie takie o</h2>
+            <div class="content">
+                <p>Szefowa to jednak top szefowa xdx</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.announcement').forEach(announcement => {
+            announcement.addEventListener('click', () => {
+                const content = announcement.querySelector('.content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
