@@ -11,28 +11,49 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        header {
-            background: url('header-image.jpg') no-repeat center;
-            color: #ffffff;
-            padding: 4rem 0;
-            text-align: center;
-            position: relative;
-        }
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Optional: to darken the image */
-        }
-        header h1 {
-            position: relative;
-            z-index: 1;
-            margin: 0;
-            font-size: 3rem;
-        }
+       header {
+    background: url('header-image.jpg') no-repeat center;
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Opcjonalnie: przyciemnienie tła */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Zapewnia, że obrazy są nad przyciemnionym tłem */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-image {
+    width: 200px; /* Szerokość obrazów po lewej i prawej */
+    border-radius: 50%; /* Opcjonalnie: Zaokrąglenie obrazów */
+}
+
+.logo {
+    width: 250px;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 2rem 0 0 0;
+    font-size: 3rem;
+}
         nav {
             display: flex;
             justify-content: center;
@@ -90,15 +111,52 @@
             width: 50px; /* Adjust as needed */
             height: auto;
         }
+        .sklad {
+    text-align: center; /* Center align the text and images */
+}
+
+.sklad p {
+    display: inline-block;
+    margin: 1rem 2rem 0.5rem 2rem; /* Adjust margins to create spacing */
+}
+
+.sklad-img {
+    width: 250px;
+    border-radius: 200px;
+    margin-bottom: 1rem; /* Space between image and next item */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sklad-img1 {
+    width: 250px;
+    border-radius: 200px;
+    margin-bottom: 1rem; /* Space between image and next item */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+        li3 img {
+    display: block; /* Ustawia obrazek jako blokowy element, co sprawia, że każdy obrazek zajmuje całą szerokość */
+    width: 150px; /* Dostosuj szerokość obrazka */
+    margin: 10px auto; /* Centruje obrazek w poziomie i dodaje margines u góry i dołu */
+    border-radius: 10px; /* Zaokrągla rogi obrazka */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodaje cień pod obrazkiem */
+}
+
     </style>
 </head>
 <body>
     <header>
+       <div class="header-content">
+        <img src="logo.png" alt="Left Image" class="header-image">
         <img src="182.png" alt="LSPD Logo" class="logo">
+        <img src="logo.png" alt="Right Image" class="header-image">
+    </div>
         <h1>Los Santos Police Department</h1>
     </header>
     <nav>
-        <a href="#">Strona Główna</a>
+        <a href="aria2.html">Strona Główna</a>
         <a href="officers.html">O Nas</a>
         <a href="loading.html">Ogłoszenia</a>
         <a href="#">Kontakt</a>
@@ -123,33 +181,45 @@
             Najwyższe dowództwo, składające się z wysoce doświadczonych i wysoko postawionych organów LSPD, odpowiedzialnych za strategiczne planowanie, podejmowanie kluczowych decyzji oraz koordynowanie funkcjonowania całej jednostki.
         </p>
         <h3>Skład</h3>
-        <p>
-            Chief of Police [101]- Lola Badclick
-        </p>
-        <p>
-            Assistant Chief of Police [102]- Raul Danzano
-        </p>
-        <p>
-            Deputy Chief of Police [103]- Mason Murphy
-        </p>
-        <p>
-            Deputy Chief of Police [104]- Youccambe Sauvage
-        </p>
-        <p>
-            Commander [105]- Christopher Burns
-        </p>
+       <div class="sklad">
+    <p>Chief of Police [101] - Lola Badclick</p>
+    <img src="Lola Badclick.png" alt="Lola Badclick" class="sklad-img">
+    
+    <p>Assistant Chief of Police [102] - Raul Danzano</p>
+    <img src="Raul Danzano.png" alt="Raul Danzano" class="sklad-img">
+    
+    <p>Deputy Chief of Police [103] - Mason Murphy</p>
+    <img src="Mason Murphy.png" alt="Mason Murphy" class="sklad-img">
+    
+    <p>Deputy Chief of Police [104] - Youccambe Sauvage</p>
+    <img src="Youccambe Sauvage.png" alt="Youccambe Sauvage" class="sklad-img">
+    
+    <p>Commander [105] - Christopher Burns</p>
+    <img src="Christopher Burns.png" alt="Christopher Burns" class="sklad-img">
+</div>
         <h2>JEDNOSTKI</h2>
         <h3>San Andreas State Police</h3>
+        <li3>
+    <img src="logo3.png" alt="Logo">
+        </li3>
         <p>
             San Andreas State Police jest agencja rządową stanu San Andreas, pełni rolę policji stanowej. Organizacja odpowiedzialna za egzekwowanie prawa. Działanie frakcji skupia się na patrolach dróg stanowych oraz protekcji obiektów podlegających pod stan. Departament posiada również specjalną jednostkę odpowiedzialną za ochronę wyższych urzędników stanowych i członków sądownictwa stanowego.
         </p>
-        <p>
-        </p>
-        <h3>Los Santos County Sheriff Department</h3>
+        <p> 
+        </p> 
+        <li3>
+        </li3>
+        <h3>Los Santos County Sheriff Department</h3> 
+        <li3>
+    <img src="logo2.webp" alt="Logo">
+        </li3>
         <p>
             Głównym zdaniem szeryfów jest patrolowanie i pilnowanie przestrzeganie prawa na obszarach okolic Sandy Shores, Grapespeed oraz Paleto Bay oraz Los Santos. Szeryfosto zawsze służy wsparciem dla PD w Los Santos w razie sytuacji nadzwyczajnych. 
         </p>
-        <h3>San Andreas State Park Rangers</h3>
+        <h3>San Andreas State Park Rangers</h3> 
+        <li3>
+    <img src="logo4.webp" alt="Logo">
+        </li3>
         <p>
             SAN ANDREAS STATE PARK RANGERS to jedna z licznych straży leśnych funkcjonujących w obrebię San Andreas. Głownym zadaniem San Andreas Park Rangers jest dbanie o zieleń, a także poza partroli lasów, dróg off-roadowych zadaniem San Andreas Park Rangers jest prowadzenie poszukiwań, dbanie o życie jak i mienie ludzi i zwierząt - działa też w pomocy dla innych instytucji rządowych. SAPR jest upoważnione do wystawiania mandatów oraz pouczeń osobą zakłócających lub niszczących porządek i przyrodę, a nawet tymczasowego zatrzymania podejrzanego aby dalej przekazać odpowiednim instytucją.
         </p>
@@ -160,12 +230,12 @@
             <li><img src="srg1.jpg" alt="Sergeant I">Sergeant I</li>
             <li><img src="srg2.jpg" alt="Sergeant II">Sergeant II</li>
             <li><img src="srg3.jpg" alt="Sergeant III">Sergeant III</li>
-            <li><img src="Lieu.png" alt="Lieutenant">Lieutenant</li>
-            <li><img src="cap.png" alt="Captain">Captain</li>
-            <li><img src="comm.png" alt="Commander">Commander</li>
-            <li><img src="dep.png" alt="Deputy Chief">Deputy Chief</li>
-            <li><img src="asss.png" alt="Assistant Chief">Assistant Chief</li>
-            <li><img src="cop.png" alt="Chief of Police">Chief of Police</li>
+            <li><img src="Lieu.png" alt="Lieutenant" style="width: 30px;">Lieutenant</li>
+            <li><img src="cap.png" alt="Captain" style="width: 50px;">Captain</li>
+            <li><img src="comm.png" alt="Commander" style="width: 50px;">Commander</li>
+            <li><img src="dep.png" alt="Deputy Chief" style="width: 70px;">Deputy Chief</li>
+            <li><img src="asss.png" alt="Assistant Chief" style="width: 90px;">Assistant Chief</li>
+            <li><img src="cop.png" alt="Chief of Police" style="width: 100px;">Chief of Police</li>
         </ul>
     </div>
     <footer>
