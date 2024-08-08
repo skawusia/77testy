@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja Zdjęcia</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #808080; /* szare tło */
+        }
+        .zoom-container {
+            animation: zoom 5s ease-in-out infinite;
+        }
+        @keyframes zoom {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="zoom-container">
+        <img src="logo.png" alt="Animowane Zdjęcie">
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "aria2.html";
+        }, 5000);
+    </script>
+</body>
+</html>
